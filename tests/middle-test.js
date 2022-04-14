@@ -1,5 +1,6 @@
 //Module
 const middle = require("../middle");
+const assertEqual = require("../assertEqual");
 
 // Tests
 
@@ -9,8 +10,6 @@ const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const random = ["dog", 16, true, false, undefined, null];
 const empty = [];
 
-console.log(middle(pets));
-console.log(middle(songs));
-console.log(middle(nums));
-console.log(middle(random));
-console.log(middle(empty));
+console.log(assertEqual(middle([]), []));
+console.log(assertEqual(middle(nums), [5, 6]));
+console.log(assertEqual(middle(songs), ["bellyache"]));
