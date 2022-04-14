@@ -1,27 +1,3 @@
-// assertArraysEqual Function
-
-const assertArraysEqual = (array1, array2) => {
-  if (eqArrays(array1, array2)) {
-    console.log("✅ Arrays are equal. ✅");
-  } else {
-    console.log("🛑 Arrays are not equal. 🛑");
-  }
-};
-
-// eqArrays Function
-
-const eqArrays = (array1, array2) => {
-  let trueOrFalse = true;
-  for (let i = 0; i < array1.length; i++) {
-    if (array1[i] === array2[i]) {
-      trueOrFalse = true;
-    } else {
-      trueOrFalse = false;
-    }
-    return trueOrFalse;
-  }
-};
-
 // Middle Function
 const middle = (array) => {
   let returnArray = [];
@@ -36,3 +12,6 @@ const middle = (array) => {
     returnArray.push(array[oddIndex]);
   }
 };
+
+//Export
+module.exports = middle;
