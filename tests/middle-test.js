@@ -14,5 +14,3 @@ const empty = [];
 // console.log(assertEqual(middle(nums), [5, 6]));
 // console.log(assertEqual(middle(songs), ["bellyache"]));
 // console.log(assertEqual(middle(random), [true, false]));
-
-assertEqual(1 + 1, 2);
