@@ -36,13 +36,13 @@ const billieAlbumRatings2 = {
 console.log(eqObjects(billieAlbumRatings, billieAlbumRatings2)); // true test
 
 const obj1 = {
-  firstName: "Billie",
-  lastName: "Eilish",
+  firstName: 'Billie',
+  lastName: 'Eilish',
 };
 
 const obj2 = {
-  firstName: "Brian",
-  lastName: "Nguyen",
+  firstName: 'Brian',
+  lastName: 'Nguyen',
 };
 
 console.log(eqObjects(obj1, obj2)); // false test

@@ -14,18 +14,18 @@ const eqArrays = (array1, array2) => {
 // assertArraysEqual Function
 const assertArraysEqual = (array1, array2) => {
   if (eqArrays(array1, array2)) {
-    console.log("✅ Arrays are equal. ✅");
+    console.log('✅ Arrays are equal. ✅');
   } else {
-    console.log("🛑 Arrays are not equal. 🛑");
+    console.log('🛑 Arrays are not equal. 🛑');
   }
 };
 
 // letterPositions Function
-const letterPositions = (inputString) => {
+const letterPositions = inputString => {
   let results = {};
   for (let i = 0; i < inputString.length; i++) {
     let letter = inputString[i];
-    if (letter !== " ") {
+    if (letter !== ' ') {
       letter in results ? results[letter].push(i) : (results[letter] = [i]);
     }
   }
@@ -45,5 +45,5 @@ const letterPositions = (inputString) => {
 
 // Tests
 
-console.log(letterPositions("EILISH"));
-console.log(letterPositions("RANDOM STRING WITH SPACES IN IT"));
+console.log(letterPositions('EILISH'));
+console.log(letterPositions('RANDOM STRING WITH SPACES IN IT'));

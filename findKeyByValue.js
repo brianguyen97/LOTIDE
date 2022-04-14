@@ -20,14 +20,14 @@ const findKeyByValue = (object, key) => {
 // Tests
 
 const bestTVShowsByGenre = {
-  sci_fi: "The Expanse",
-  comedy: "Brooklyn Nine-Nine",
-  drama: "The Wire",
+  sci_fi: 'The Expanse',
+  comedy: 'Brooklyn Nine-Nine',
+  drama: 'The Wire',
 };
 
-console.log(findKeyByValue(bestTVShowsByGenre, "The Wire")); //Output: drama
-console.log(findKeyByValue(bestTVShowsByGenre, "drama")); //Output: undefined
-console.log(findKeyByValue(bestTVShowsByGenre, "")); //Output: undefined
+console.log(findKeyByValue(bestTVShowsByGenre, 'The Wire')); //Output: drama
+console.log(findKeyByValue(bestTVShowsByGenre, 'drama')); //Output: undefined
+console.log(findKeyByValue(bestTVShowsByGenre, '')); //Output: undefined
 
 const billieAlbumRatings = {
   WWAFAWDWG: 9,
@@ -37,4 +37,4 @@ const billieAlbumRatings = {
 
 console.log(findKeyByValue(billieAlbumRatings, 10)); //Output: dontSmileAtMe
 console.log(findKeyByValue(billieAlbumRatings, 5)); //Output: undefined
-console.log(findKeyByValue(billieAlbumRatings, "ten")); //Output: undefined
+console.log(findKeyByValue(billieAlbumRatings, 'ten')); //Output: undefined

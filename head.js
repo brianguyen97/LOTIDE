@@ -1,5 +1,5 @@
 // Head Function
-const head = (arr) => {
+const head = arr => {
   return arr[0];
 };
 

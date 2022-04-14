@@ -1,6 +1,6 @@
 // eqObjects
 const assertObjectsEqual = (object1, object2) => {
-  const inspect = require("util").inspect;
+  const inspect = require('util').inspect;
   for (let i = 0; i < Object.keys(object1).length; i++) {
     if (
       Object.keys(object1)[i] !== Object.keys(object2)[i] ||
@@ -35,13 +35,13 @@ const billieAlbumRatings2 = {
 assertObjectsEqual(billieAlbumRatings, billieAlbumRatings2); // true test
 
 const obj1 = {
-  firstName: "Billie",
-  lastName: "Eilish",
+  firstName: 'Billie',
+  lastName: 'Eilish',
 };
 
 const obj2 = {
-  firstName: "Brian",
-  lastName: "Nguyen",
+  firstName: 'Brian',
+  lastName: 'Nguyen',
 };
 
 assertObjectsEqual(obj1, obj2); // false test

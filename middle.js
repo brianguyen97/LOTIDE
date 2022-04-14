@@ -1,5 +1,5 @@
 // Middle Function
-const middle = (array) => {
+const middle = array => {
   let accumulator = [];
   if (array.length <= 2) {
     return accumulator;

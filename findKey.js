@@ -21,7 +21,7 @@ const findKey = (object, callback) => {
 console.log(
   findKey(
     {
-      "Blue Hill": { stars: 1 },
+      'Blue Hill': { stars: 1 },
       Akaleri: { stars: 3 },
       noma: { stars: 2 },
       elBulli: { stars: 3 },
@@ -29,6 +29,6 @@ console.log(
       Akelarre: { stars: 3 },
     },
     // (x) => x.stars === 5 // undefined
-    (x) => x.stars === 2 // noma
+    x => x.stars === 2 // noma
   )
 ); // => "noma"

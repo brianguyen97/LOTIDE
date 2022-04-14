@@ -1,5 +1,5 @@
 // Tail Function
-const tail = (arr) => {
+const tail = arr => {
   return arr.slice(1);
 };
 

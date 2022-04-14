@@ -10,7 +10,7 @@ const assertEqual = (actual, expected) => {
 
 // countLetters Function
 
-const countLetters = (stringToCount) => {
+const countLetters = stringToCount => {
   const results = {};
   for (let letter of stringToCount) {
     if (results[letter]) {
@@ -29,4 +29,4 @@ const countLetters = (stringToCount) => {
 // console.log(countLetters(["1", "2", "3"]));
 // console.log(countLetters("Neferpitou"));
 // console.log(countLetters("Example string with spaces in it and a period."));
-console.log(countLetters("Virmel"));
+console.log(countLetters('Virmel'));
