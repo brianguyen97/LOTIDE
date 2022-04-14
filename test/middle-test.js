@@ -1,6 +1,7 @@
 //Module
 const middle = require('../middle');
 const assertEqual = require('../assertEqual');
+const { assert } = require('chai');
 
 // Tests
 
@@ -10,7 +11,20 @@ const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const random = ['dog', 16, true, false, undefined, null];
 const empty = [];
 
-// console.log(assertEqual(middle([]), []));
-// console.log(assertEqual(middle(nums), [5, 6]));
-// console.log(assertEqual(middle(songs), ["bellyache"]));
-// console.log(assertEqual(middle(random), [true, false]));
+describe('#middle', () => {
+  it('Returns bird', () => {
+    assert.deepEqual(middle(pets), ['bird']);
+  });
+  it('Returns bellyache', () => {
+    assert.deepEqual(middle(songs), ['bellyache']);
+  });
+  it('Returns 5 & 6', () => {
+    assert.deepEqual(middle(nums), [5, 6]);
+  });
+  it('Returns true & false', () => {
+    assert.deepEqual(middle(random), [true, false]);
+  });
+  it('Returns empty array', () => {
+    assert.deepEqual(middle(empty), []);
+  });
+});
