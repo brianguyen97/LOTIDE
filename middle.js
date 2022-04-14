@@ -1,16 +1,17 @@
 // Middle Function
 const middle = (array) => {
-  let returnArray = [];
-  if (array.length > 2) {
-    return returnArray;
+  let accumulator = [];
+  if (array.length <= 2) {
+    return accumulator;
   } else if (array.length % 2 === 0) {
     let evenIndex = array.length / 2;
-    returnArray.push(array[evenIndex - 1]);
-    returnArray.push(array[evenIndex]);
+    accumulator.push(array[evenIndex - 1]);
+    accumulator.push(array[evenIndex]);
   } else if (array.length % 2 === 1) {
     let oddIndex = (array.length - 1) / 2;
-    returnArray.push(array[oddIndex]);
+    accumulator.push(array[oddIndex]);
   }
+  return accumulator;
 };
 
 //Export
