@@ -1,13 +1,3 @@
-// assertEqual
-
-const assertEqual = (actual, expected) => {
-  if (actual === expected) {
-    console.log(` ✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else if (actual != expected) {
-    console.log(` 🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
 // Count Only Function
 /* 
    allItems: an array of strings that we need to look through
