@@ -5,6 +5,7 @@ const middle = require('./middle');
 const countLetters = require('./countLetters');
 const findKeyByValue = require('./findKeyByValue');
 const map = require('./map');
+const letterPositions = require('./letterPositions');
 
 module.exports = {
   head: head,
@@ -13,4 +14,5 @@ module.exports = {
   countLetters: countLetters,
   findKeyByValue: findKeyByValue,
   map: map,
+  letterPositions: letterPositions,
 };
