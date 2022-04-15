@@ -1,4 +1,17 @@
 {
+  "name": "lotide",
+  "description": "Mini clone of Lodash, used for learning purposes.",
+  "version": "1.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brianguyen97/LOTIDE"
+  },
+  "keywords": [],
+  "author": "Brian Nguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brianguyen97/LOTIDE/issues"
+  },
   "devDependencies": {
     "chai": "^4.3.6",
     "mocha": "^9.2.2"
