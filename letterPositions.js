@@ -10,10 +10,5 @@ const letterPositions = inputString => {
   return results;
 };
 
-// Tests
-
-console.log(letterPositions('EILISH'));
-console.log(letterPositions('RANDOM STRING WITH SPACES IN IT'));
-
 // Export
 module.exports = letterPositions;
