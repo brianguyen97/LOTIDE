@@ -1,16 +1,15 @@
-//Module
+// Module
 const middle = require('../middle');
-const assertEqual = require('../assertEqual');
 const { assert } = require('chai');
 
-// Tests
-
+// Arrays
 const pets = ['cat', 'dog', 'bird', 'fish', 'bunny'];
 const songs = ['bad guy', 'bellyache', 'Happier Than Ever'];
 const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const random = ['dog', 16, true, false, undefined, null];
 const empty = [];
 
+// Tests
 describe('#middle', () => {
   it('Returns bird', () => {
     assert.deepEqual(middle(pets), ['bird']);
