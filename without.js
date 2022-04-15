@@ -1,5 +1,4 @@
 // Without Function
-
 const without = (array, excludeArray) => {
   let newArray = [];
   for (let i = 0; i < array.length; i++) {
@@ -9,13 +8,6 @@ const without = (array, excludeArray) => {
   }
   return newArray;
 };
-
-// Tests
-
-without([1, 2, 3], [1]); // => [2, 3]
-without(['1', '2', '3'], [1, 2, '3']); // => ["1", "2"]
-
-const words = ['hello', 'world', 'lighthouse'];
 
 // Export
 module.exports = without;
